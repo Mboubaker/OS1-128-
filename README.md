@@ -144,3 +144,7 @@ $ roslaunch kdlidar_ros kdlidar_ros_ouster_evaluation.launch replay:="true" repl
 save the genirated map as a ply file when you have completed the sequence. 
 $rosservice call /path ros_node_pcl/save_ply /path:to:mymap.ply 
 once the map is saved you should see a success message success: True
+     
+     
+     
+     >[image](image.jpg "titre")
