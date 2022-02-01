@@ -96,7 +96,7 @@ To record raw sensor output use rosbag record. After starting the roslaunch comm
 
 This will save a bag file of recorded data in the current working directory.
 
-You should copy and save the metadata file alongside your data. The metadata file will be saved at the provided path to roslaunch. If you run the node and cannot find the metadata file, try looking inside your ${ROS_HOME}, generally $HOME/.ros. Regardless, you must retain the metadata file, as you will not be able to replay your data later without it.
+
       
 2.4/ Playing Back Recorded Data
 
