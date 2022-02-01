@@ -146,6 +146,8 @@ Save the genirated map as a ply file when you have completed the sequence.
 
 Once the map is saved you should see a success message success: True
 
-     
+ 
+ 
+ [Capture d’écran de 2022-02-01 11-06-38](https://user-images.githubusercontent.com/97898968/151949296-953e282b-51bb-4eb1-99d1-fd7c34129451.png)
      
      
