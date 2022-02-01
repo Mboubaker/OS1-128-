@@ -145,7 +145,10 @@ Save the genirated map as a ply file when you have completed the sequence.
             $ rosservice call /path ros_node_pcl/save_ply /path:to:mymap.ply 
 
 Once the map is saved you should see a success message success: True
-
+ 
+ 
+ 
+OS1 Cartographer Map Generation in RViz : 
  
  ![SLAM_Ouster_OS1_128](https://user-images.githubusercontent.com/97898968/151950724-96458af4-2ef9-40b1-9401-a1874dedb610.png)
      
