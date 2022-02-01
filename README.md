@@ -115,7 +115,11 @@ Unzip the package
 
 Source the setup.bash with "--extend" flag 
 
-             $ cd ../ ../ .. $ mkdir SLAM $ cd SLAM $ cp ~/Downloads/ROS_node.zip . 
+             $ cd ../ ../ .. $ mkdir SLAM 
+ 
+             $ cd SLAM 
+ 
+             $ cp ~/Downloads/ROS_node.zip . 
 
              $ unzip ROS_node.zip 
 
@@ -123,7 +127,9 @@ Source the setup.bash with "--extend" flag
 
 You should now have all the necessary pieces of software on your system. For each new terminal, need to source both Ouster and Kudan source files 
 
-             $ source/path-to-ouster-ros/devel/setup.bash Extend the SLAM ROS_node to work with the ouster_node 
+             $ source/path-to-ouster-ros/devel/setup.bash 
+ 
+Extend the SLAM ROS_node to work with the ouster_node 
 
              $ source / path-to-ROS_node/install/setup.bash --extend
 
