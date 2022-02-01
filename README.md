@@ -1,6 +1,6 @@
 # OS1-128-
 
- For instructions on ROS, start with the Example ROS Code section : 
+This post describes the process of integrating Ouster OS1 lidar data with ROS_SLAM_node to generate 2D and 3D maps of an environment. For instructions on ROS, start with the Example ROS Code section : 
 
 This repository : https://github.com/ouster-lidar/ouster_example#example-ros-code contains sample code for connecting to and configuring ouster sensors, reading and visualizing data, and interfacing with ROS.
 
