@@ -109,11 +109,11 @@ A metadata file is mandatory for replay of data. See Recording Data for how to o
  
 2.5/ SLAM 
      
-Download the ROS node to your target location 
+1- Download the ROS node to your target location 
 
-Unzip the package
+2- Unzip the package
 
-Source the setup.bash with "--extend" flag 
+3- Source the setup.bash with "--extend" flag 
 
              $ cd ../ ../ .. $ mkdir SLAM 
  
