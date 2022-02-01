@@ -148,8 +148,8 @@ Once the map is saved you should see a success message success: True
  
  
  
-OS1 Cartographer Map Generation in RViz : 
+OS1-128 Map Generation in RViz : 
  
- ![SLAM_Ouster_OS1_128](https://user-images.githubusercontent.com/97898968/151950724-96458af4-2ef9-40b1-9401-a1874dedb610.png)
+ ![SLAM_Ouster_OS1_128](https://user-images.githubusercontent.com/97898968/151951722-081d6a03-4590-4d25-8587-cae117adf7f6.png)
      
      
