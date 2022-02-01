@@ -124,26 +124,37 @@ rosbag play --clock <bag files ...>
 
 A metadata file is mandatory for replay of data. See Recording Data for how to obtain the metadata file when recording your data.
  
-        
-4.5/ SLAM Download the ROS node to your target location
-Unzip the package source the setup.bash with "--extend" flag 
-$ cd ../ ../ .. 
-$ mkdir SLAM 
-$ cd SLAM 
-$ cp ~/Downloads/ROS_node.zip . 
-$ unzip ROS_node.zip $ source SLAM/install/setup.bash --extend 
-you should now have all the necessary pieces of software on your system. 
-For each new terminal, need to source both Ouster and Kudan source files 
-$ source/path-to-ouster-ros/devel/setup.bash 
-Extend the SLAM ROS_node to work with the ouster_node 
+        4.5/ SLAM 
+     
+Download the ROS node to your target location 
+
+Unzip the package
+
+Source the setup.bash with "--extend" flag 
+
+$ cd ../ ../ .. $ mkdir SLAM $ cd SLAM $ cp ~/Downloads/ROS_node.zip . 
+
+$ unzip ROS_node.zip 
+
+$ source SLAM/install/setup.bash --extend 
+
+You should now have all the necessary pieces of software on your system. For each new terminal, need to source both Ouster and Kudan source files 
+
+$ source/path-to-ouster-ros/devel/setup.bash Extend the SLAM ROS_node to work with the ouster_node 
+
 $ source / path-to-ROS_node/install/setup.bash --extend
 
 Playback a saved rosbag, and run lidar SLAM 
-$ roslaunch kdlidar_ros kdlidar_ros_ouster_evaluation.launch replay:="true" replay_rate:="0.5" bag_path:="/path/and/filename.bag" metadata:="/path/and/filename.json
 
-save the genirated map as a ply file when you have completed the sequence. 
+$ roslaunch kdlidar_ros kdlidar_ros_ouster_evaluation.launch replay:="true" replay_rate:="0.5" bag_path:="/path/and/filename.bag" metadata:="/path
+/and/filename.json
+
+Save the genirated map as a ply file when you have completed the sequence. 
+
 $rosservice call /path ros_node_pcl/save_ply /path:to:mymap.ply 
-once the map is saved you should see a success message success: True
+
+Once the map is saved you should see a success message success: True
+
      
      
      
