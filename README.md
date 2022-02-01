@@ -1,4 +1,4 @@
-# OS1-128-
+##  OS1-128-
 
 This post describes the process of integrating Ouster OS1 lidar data with ROS_SLAM_node to generate 2D and 3D maps of an environment. For instructions on ROS, start with the Example ROS Code section : 
 
@@ -10,15 +10,15 @@ This repository : https://github.com/ouster-lidar/ouster_example#example-ros-cod
     python:  contains the code for the ouster sensor python SDK
 
 
-1/ Building on Linux
+# 1/ Building on Linux
        
-1.1. To install build dependencies on Ubuntu, run:
+# 1.1. To install build dependencies on Ubuntu, run:
 
          $sudo apt install build-essential cmake libglfw3-dev libglew-dev libeigen3-dev \
                                        libjsoncpp-dev libtclap-dev
 
 
-1.2. To build run the following commands:
+# 1.2. To build run the following commands:
 
          $mkdir build
          $cd build
@@ -27,12 +27,12 @@ This repository : https://github.com/ouster-lidar/ouster_example#example-ros-cod
 
 
   
-  2/ Example ROS Code
+#  2/ Example ROS Code
 
 The sample code include tools for publishing sensor data as standard ROS topics. Since ROS uses its own build system, it must be compiled separately from the rest of the sample code.The provided ROS code has been tested on ROS Kinetic, Melodic, and Noetic on Ubuntu 16.04, 18.04, and 20.04, respectively. Use the installation instructions to get started with ROS on your platform.
  
  
-2.1/ Building: 
+# 2.1/ Building: 
 
 The build dependencies include those of the sample code:
 
@@ -63,7 +63,7 @@ For each command in the following sections, make sure to first set up the ROS en
 
               $source myworkspace/devel/setup.bash
 
-2.2/ Running ROS Nodes with a Sensor
+# 2.2/ Running ROS Nodes with a Sensor
 
 Make sure the sensor is connected to the network. See "Connecting to the Sensor" in the Software User Manual for instructions and different options for network configuration.
 
@@ -88,7 +88,7 @@ lidar_mode:=<mode> where mode is one of 512x10, 512x20, 1024x10, 1024x20, or 204
 
 viz:=true to visualize the sensor output, if you have the rviz ROS package installed
 
-2.3/ Recording Data
+## 2.3/ Recording Data
 
 To record raw sensor output use rosbag record. After starting the roslaunch command above, in another terminal, run:
 
