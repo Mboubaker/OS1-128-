@@ -140,6 +140,10 @@ Playback a saved rosbag, and run lidar SLAM
 
              $ roslaunch kdlidar_ros kdlidar_ros_ouster_evaluation.launch replay:="true" replay_rate:="0.5" bag_path:="/path/and/filename.bag" metadata:="/path/and/filename.json
 
+
+2.6/ Exporting the map to PLY:
+    
+    
 Save the genirated map as a ply file when you have completed the sequence. 
 
             $ rosservice call /path ros_node_pcl/save_ply /path:to:mymap.ply 
