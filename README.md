@@ -10,11 +10,10 @@ This repository : https://github.com/ouster-lidar/ouster_example#example-ros-cod
     python:  contains the code for the ouster sensor python SDK
 
 
-Sample Client and Visualizer
        1/ Building on Linux
        
 1.1. To install build dependencies on Ubuntu, run:
-                                 $sudo apt install build-essential cmake libglfw3-dev libglew-dev libeigen3-dev \
+         $sudo apt install build-essential cmake libglfw3-dev libglew-dev libeigen3-dev \
                                        libjsoncpp-dev libtclap-dev
 
 
@@ -88,7 +87,7 @@ viz:=true to visualize the sensor output, if you have the rviz ROS package insta
 
 To record raw sensor output use rosbag record. After starting the roslaunch command above, in another terminal, run:
 
-          $rosbag record /os_node/imu_packets /os_node/lidar_packets
+              $rosbag record /os_node/imu_packets /os_node/lidar_packets
 
 This will save a bag file of recorded data in the current working directory.
 
@@ -98,11 +97,11 @@ You should copy and save the metadata file alongside your data. The metadata fil
 
 To publish ROS topics from recorded data, specify the replay and metadata parameters when running roslaunch:
 
-         $roslaunch ouster_ros ouster.launch replay:=true metadata:=<path to metadata json>
+             $roslaunch ouster_ros ouster.launch replay:=true metadata:=<path to metadata json>
 
 And in a second terminal run rosbag play:
 
-         $rosbag play --clock <bag files ...>
+             $rosbag play --clock <bag files ...>
 
 A metadata file is mandatory for replay of data. See Recording Data for how to obtain the metadata file when recording your data.
  
@@ -114,29 +113,28 @@ Unzip the package
 
 Source the setup.bash with "--extend" flag 
 
-           $ cd ../ ../ .. $ mkdir SLAM $ cd SLAM $ cp ~/Downloads/ROS_node.zip . 
+             $ cd ../ ../ .. $ mkdir SLAM $ cd SLAM $ cp ~/Downloads/ROS_node.zip . 
 
-           $ unzip ROS_node.zip 
+             $ unzip ROS_node.zip 
 
-           $ source SLAM/install/setup.bash --extend 
+             $ source SLAM/install/setup.bash --extend 
 
 You should now have all the necessary pieces of software on your system. For each new terminal, need to source both Ouster and Kudan source files 
 
-           $ source/path-to-ouster-ros/devel/setup.bash Extend the SLAM ROS_node to work with the ouster_node 
+             $ source/path-to-ouster-ros/devel/setup.bash Extend the SLAM ROS_node to work with the ouster_node 
 
-           $ source / path-to-ROS_node/install/setup.bash --extend
+             $ source / path-to-ROS_node/install/setup.bash --extend
 
 Playback a saved rosbag, and run lidar SLAM 
 
-          $ roslaunch kdlidar_ros kdlidar_ros_ouster_evaluation.launch replay:="true" replay_rate:="0.5" bag_path:="/path/and/filename.bag" metadata:="/path/and/filename.json
+             $ roslaunch kdlidar_ros kdlidar_ros_ouster_evaluation.launch replay:="true" replay_rate:="0.5" bag_path:="/path/and/filename.bag" metadata:="/path/and/filename.json
 
 Save the genirated map as a ply file when you have completed the sequence. 
 
-          $rosservice call /path ros_node_pcl/save_ply /path:to:mymap.ply 
+            $ rosservice call /path ros_node_pcl/save_ply /path:to:mymap.ply 
 
 Once the map is saved you should see a success message success: True
 
      
      
      
-     >[image](image.jpg "titre")
