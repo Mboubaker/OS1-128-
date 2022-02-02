@@ -168,3 +168,4 @@ If you want to save the trajectory as a file (position and orientation), then us
     
 
      
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/97898968/152130522-b7bb6154-e21f-4a0c-b8b6-e1ce35f5c585.gif)
