@@ -164,8 +164,6 @@ If you want to save the trajectory as a file (position and orientation), then us
  
 ###                                                      OS1-128 Map Generation in RViz : 
  
- ![SLAM_Ouster_OS1_128](https://user-images.githubusercontent.com/97898968/151951722-081d6a03-4590-4d25-8587-cae117adf7f6.png)
     
-
+         ![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/97898968/152132648-dc3269ca-0e61-423b-b33c-16ff8b29a69e.gif)
      
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/97898968/152130522-b7bb6154-e21f-4a0c-b8b6-e1ce35f5c585.gif)
