@@ -164,16 +164,8 @@ If you want to save the trajectory as a file (position and orientation), then us
             storeAllFrames: True (default is false)
             storeDenseFrames: True (default is false)
  
-<p align="center">
-
-   ###                                                    OS1-128 Map Generation in RViz : 
-
-</p> 
+<p align="center"> ###OS1-128 Map Generation in RViz :  </p> 
     
-<p align="center">
-
-    ![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/97898968/152132648-dc3269ca-0e61-423b-b33c-16ff8b29a69e.gif)
-
-</p> 
+<p align="center"> ![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/97898968/152132648-dc3269ca-0e61-423b-b33c-16ff8b29a69e.gif) </p> 
    
      
