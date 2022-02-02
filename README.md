@@ -148,8 +148,19 @@ Save the genirated map as a ply file when you have completed the sequence.
             $ rosservice call /path ros_node_pcl/save_ply /path:to:mymap.ply 
 
 Once the map is saved you should see a success message success: True
+
+    
+### Optional: 
+    
+If you want to save the trajectory as a file (position and orientation), then use the following command to save the trajectory to file once ros starts
+            
+            $ rostopic echo -p /kdlidar_ros_pcl/pose > /path/to/trajectory.csv
+
  
- 
+ If you want to adjust the density of the map, you will need to modify the included ouster_evaluation.yaml file
+    
+            storeAllFrames: True (default is false)
+            storeDenseFrames: True (default is false)
  
 ###                                                      OS1-128 Map Generation in RViz : 
  
