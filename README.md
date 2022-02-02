@@ -155,6 +155,5 @@ Once the map is saved you should see a success message success: True
  
  ![SLAM_Ouster_OS1_128](https://user-images.githubusercontent.com/97898968/151951722-081d6a03-4590-4d25-8587-cae117adf7f6.png)
     
-   [![Watch the video]  (https://user-images.githubusercontent.com/97898968/152126350-66713eb6-519d-461b-bbb2-561af55ff5aa.mp4)
 
      
