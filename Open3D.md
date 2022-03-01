@@ -1,5 +1,5 @@
-#Getting started
-
+# Open3D
+Open3D is an open-source library that supports rapid development of software that deals with 3D data
 ## Installation with pip 
 
     pip install open3d
