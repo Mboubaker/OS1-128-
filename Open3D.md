@@ -75,12 +75,12 @@ A point cloud is loaded and downsampled using voxel_downsample.
                                       
 ## Statistical outlier removal
 
-####statistical_outlier_removal removes points that are further away from their neighbors compared to the average for the point cloud. 
+statistical_outlier_removal removes points that are further away from their neighbors compared to the average for the point cloud. 
 It takes two input parameters:
 
-####nb_neighbors, which specifies how many neighbors are taken into account in order to calculate the average distance for a given point.
+nb_neighbors, which specifies how many neighbors are taken into account in order to calculate the average distance for a given point.
 
-####std_ratio, which allows setting the threshold level based on the standard deviation of the average distances across the point cloud.
+std_ratio, which allows setting the threshold level based on the standard deviation of the average distances across the point cloud.
 The lower this number the more aggressive the filter will be.
     
     print("Statistical oulier removal")
