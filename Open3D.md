@@ -36,15 +36,11 @@ To read a point cloud and visualize it :
 
 
 ## Voxel downsampling
-Voxel downsampling uses a regular voxel grid to create a uniformly downsampled point cloud from an input point cloud. It is often used as a pre-processing step for many point cloud processing tasks. The algorithm operates in two steps:
+Voxel downsampling uses a regular voxel grid to create a uniformly downsampled point cloud from an input point cloud. It is often used as a pre-processing step for many point cloud processing tasks. The algorithm operates in two steps: points are bucketed into voxels and after that each occupied voxel generates exactly one point by averaging all points inside.
 
-1. Points are bucketed into voxels.
-
-2. Each occupied voxel generates exactly one point by averaging all points inside.
-
-    print("Downsample the point cloud with a voxel of 0.05")
-    downpcd = pcd.voxel_down_sample(voxel_size=0.05)
-    o3d.visualization.draw_geometries([downpcd],
+     print("Downsample the point cloud with a voxel of 0.05")
+     downpcd = pcd.voxel_down_sample(voxel_size=0.05)
+     o3d.visualization.draw_geometries([downpcd],
                                       zoom=0.3412,
                                       front=[0.4257, -0.2125, -0.8795],
                                       lookat=[2.6172, 2.0475, 1.532],
