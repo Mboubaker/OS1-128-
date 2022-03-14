@@ -168,7 +168,7 @@ If you want to save the trajectory as a file (position and orientation), then us
     
    
   <p align="center">   
-  <img src="https://user-images.githubusercontent.com/97898968/158195294-6ebad33d-ed0f-4edd-8779-ed1a394066b9.png?raw=true" alt="Sublime's custom image""/>
+  <img src="https://user-images.githubusercontent.com/97898968/158196193-bf24c67f-d13d-409f-9310-3b075e288b1d.png?raw=true" alt="Sublime's custom image""/>
 </p>
 
 
