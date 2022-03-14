@@ -6,6 +6,7 @@
 Integration of : 
 1- FAST-LIO2 (Odometry): A computationally efficient and robust LiDAR-inertial odometry (LIO) package
 2- SC-PGO (Loop detection and Pose-graph Optimization): Scan Context-based Loop detection and GTSAM-based Pose-graph optimization
+Github : https://github.com/gisbi-kim/FAST_LIO_SLAM 
 
 ## 1. FAST-LIO (Fast LiDAR-Inertial Odometry):  
 Fast LiDAR-Inertial Odometry is a computationally efficient and robust LiDAR-inertial odometry package. It fuses LiDAR feature points with IMU data 
