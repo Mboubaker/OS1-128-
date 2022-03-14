@@ -81,7 +81,13 @@ Set the right path in  "catkin_fastlio_slam/src/FAST_LIO_SLAM/SC-PGO/launch/laun
     
 Result of Fast_Lio : 
     
+<p align="center">  ### OS1-128 Map Generation in RViz :  </p> 
     
+   
+  <p align="center">   
+  <img src="https://user-images.githubusercontent.com/97898968/158196193-bf24c67f-d13d-409f-9310-3b075e288b1d.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
  
 Result of Fast_Lio_Slam : 
     
