@@ -83,7 +83,7 @@ Set the right path in  "catkin_fastlio_slam/src/FAST_LIO_SLAM/SC-PGO/launch/laun
 - Bag file :=  mybag.bag (1.1 GB)
 - Sensor configuration :=  sensor_config.json (71 kB) 
     
-## Result of Fast_Lio_Slam : 
+## Result of Fast_Lio_Slam (Fast_Lio + Scan context++)  : 
     
 <p align="center">  ### OS1-128 Map Generation in RViz with Fast_Lio_Slam :  </p> 
     
