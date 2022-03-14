@@ -72,7 +72,21 @@ Set pcd_save_enable in "catkin_fastlio_slam/src/FAST_LIO_SLAM/FAST-LIO/launch/la
 Set the right path in  "catkin_fastlio_slam/src/FAST_LIO_SLAM/SC-PGO/launch/launchfile" 
   
  
-Results : 
+## Test&Results : 
+- Lidar : Ouster-OS1 
+- Ubuntu := 20.04
+- ROS := Noetic 
+- PCL  >= 1.8
+- Eigen >= 3.3.4
+    
+Result of Fast_Lio : 
+    
+    
+ 
+Result of Fast_Lio_Slam : 
+    
+    
+
   
 
 
