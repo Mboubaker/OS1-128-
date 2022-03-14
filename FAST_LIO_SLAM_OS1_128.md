@@ -73,15 +73,18 @@ Set the right path in  "catkin_fastlio_slam/src/FAST_LIO_SLAM/SC-PGO/launch/laun
   
  
 ## Test&Results : 
-- Lidar : Ouster-OS1 
+    
+- Lidar := Ouster-OS1 
 - Ubuntu := 20.04
 - ROS := Noetic 
 - PCL  >= 1.8
 - Eigen >= 3.3.4
+- Bag file :=  mybag.bag (1.1 GB)
+- Sensor configuration :=  sensor_config.json (71 kB) 
     
-Result of Fast_Lio : 
+## Result of Fast_Lio_Slam : 
     
-<p align="center">  ### OS1-128 Map Generation in RViz :  </p> 
+<p align="center">  ### OS1-128 Map Generation in RViz with Fast_Lio_Slam :  </p> 
     
    
   <p align="center">   
@@ -89,9 +92,14 @@ Result of Fast_Lio :
 </p>
 
  
-Result of Fast_Lio_Slam : 
+## Result of Fast_Lio : 
     
+    <p align="center">  ### OS1-128 Map Generation in RViz with Fast_Lio :  </p> 
     
+   
+  <p align="center">   
+  <img src="https://user-images.githubusercontent.com/97898968/158196791-3807d46c-276b-46f8-8905-d717eae299f6.png?raw=true" alt="Sublime's custom image"/>
+</p>
 
   
 
