@@ -94,7 +94,7 @@ Set the right path in  "catkin_fastlio_slam/src/FAST_LIO_SLAM/SC-PGO/launch/laun
  
 ## Result of Fast_Lio : 
     
-    <p align="center">  ### OS1-128 Map Generation in RViz with Fast_Lio :  </p> 
+<p align="center">  ### OS1-128 Map Generation in RViz with Fast_Lio :  </p> 
     
    
   <p align="center">   
