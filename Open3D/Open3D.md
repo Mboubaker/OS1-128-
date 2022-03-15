@@ -102,8 +102,6 @@ radius: which defines the radius of the sphere that will be used for counting th
     
 ## RASNAC 
 
-RANSAC
-
 We use RANSAC for global registration. In each RANSAC iteration, ransac_n random points are picked from the source point cloud. Their corresponding points in the target point cloud are detected by querying the nearest neighbor in the 33-dimensional FPFH feature space. A pruning step takes fast pruning algorithms to quickly reject false matches early.
 
 Open3D provides the following pruning algorithms:
