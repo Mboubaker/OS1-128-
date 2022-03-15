@@ -109,10 +109,3 @@ And in a second terminal run rosbag play:
 
 A metadata file is mandatory for replay of data. See Recording Data for how to obtain the metadata file when recording your data.
  
-## 2.5/ SLAM 
-
-Autonomous machines and vehicles rely on Simultaneous Localization and Mapping (SLAM) software to build a map of their environment, and understand their position and orientation within that space at any given moment.
-     
-Create a video from a ROS bag containing lidar and IMU packets from a single Ouster sensor (OS0, OS1 or OS2) with https://webslam.ouster.dev/
-    
-
