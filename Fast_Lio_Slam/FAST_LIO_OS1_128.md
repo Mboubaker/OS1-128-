@@ -67,9 +67,7 @@ pcl_viewer scans.pcd can visualize the point clouds.
 
 
 
-ROSBAG OUSTER OS1-128 
-
-## Result of Fast_Lio : 
+## ROSBAG OUSTER OS1-128 
     
 <p align="center">  ### OS1-128 Map Generation in RViz with Fast_Lio :  </p> 
     
