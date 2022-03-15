@@ -98,7 +98,23 @@ radius: which defines the radius of the sphere that will be used for counting th
     print("Radius oulier removal")
     cl, ind = voxel_down_pcd.remove_radius_outlier(nb_points=16, radius=0.05)
     display_inlier_outlier(voxel_down_pcd, ind)
+    
+    
+## RASNAC 
 
+RANSAC
+
+We use RANSAC for global registration. In each RANSAC iteration, ransac_n random points are picked from the source point cloud. Their corresponding points in the target point cloud are detected by querying the nearest neighbor in the 33-dimensional FPFH feature space. A pruning step takes fast pruning algorithms to quickly reject false matches early.
+
+Open3D provides the following pruning algorithms:
+
+- CorrespondenceCheckerBasedOnDistance checks if aligned point clouds are close (less than the specified threshold).
+- CorrespondenceCheckerBasedOnEdgeLength checks if the lengths of any two arbitrary edges (line formed by two vertices) individually drawn from source and target correspondences are similar. 
+- CorrespondenceCheckerBasedOnNormal considers vertex normal affinity of any correspondences. It computes the dot product of two normal vectors. It takes a radian value for the threshold.
+
+Only matches that pass the pruning step are used to compute a transformation, which is validated on the entire point cloud. The core function is registration_ransac_based_on_feature_matching. The most important hyperparameter of this function is RANSACConvergenceCriteria. It defines the maximum number of RANSAC iterations and the confidence probability. The larger these two numbers are, the more accurate the result is, but also the more time the algorithm takes.
+
+For more details : http://www.open3d.org/docs/release/tutorial/pipelines/global_registration.html
 
 
 
