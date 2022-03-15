@@ -2,6 +2,7 @@
 
 
 # FAST_LIO_SLAM 
+# Fast_Lio+Scan context++
 
 Integration of : 
 1- FAST-LIO2 (Odometry): A computationally efficient and robust LiDAR-inertial odometry (LIO) package
@@ -94,14 +95,6 @@ Set the right path in  "catkin_fastlio_slam/src/FAST_LIO_SLAM/SC-PGO/launch/laun
 </p>
 
  
-## Result of Fast_Lio : 
-    
-<p align="center">  ### OS1-128 Map Generation in RViz with Fast_Lio :  </p> 
-    
-   
-  <p align="center">   
-  <img src="https://user-images.githubusercontent.com/97898968/158196791-3807d46c-276b-46f8-8905-d717eae299f6.png?raw=true" alt="Sublime's custom image"/>
-</p>
 
   
 
