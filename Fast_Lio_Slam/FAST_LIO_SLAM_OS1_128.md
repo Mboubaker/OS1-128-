@@ -13,9 +13,10 @@ Fast LiDAR-Inertial Odometry is a computationally efficient and robust LiDAR-ine
 using a tightly-coupled iterated extended Kalman filter to allow robust navigation in fast-motion, noisy or cluttered environments where degeneration occurs. 
 This package address many key issues:
 
-   1. Fast iterated Kalman filter for odometry optimization;
-   2. Automaticaly initialized at most steady environments;
+   1. Fast iterated Kalman filter for odometry optimization
+   2. Automaticaly initialized at most steady environments
    3. Parallel KD-Tree Search to decrease the computation
+   
 For more details : https://github.com/hku-mars/FAST_LIO/blob/main/doc/Fast_LIO_2.pdf (FAST-LIO2: Fast Direct LiDAR-inertial Odometry ) 
 
 
