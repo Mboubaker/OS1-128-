@@ -113,63 +113,6 @@ A metadata file is mandatory for replay of data. See Recording Data for how to o
 
 Autonomous machines and vehicles rely on Simultaneous Localization and Mapping (SLAM) software to build a map of their environment, and understand their position and orientation within that space at any given moment.
      
-1- Download the ROS node to your target location 
-
-2- Unzip the package
-
-3- Source the setup.bash with "--extend" flag 
-
-             $ cd ../ ../ .. $ mkdir SLAM 
- 
-             $ cd SLAM 
- 
-             $ cp ~/Downloads/ROS_node.zip . 
-
-             $ unzip ROS_node.zip 
-
-             $ source SLAM/install/setup.bash --extend 
-
-You should now have all the necessary pieces of software on your system. For each new terminal, need to source both Ouster and Kudan source files 
-
-             $ source/path-to-ouster-ros/devel/setup.bash 
- 
-Extend the SLAM ROS_node to work with the ouster_node 
-
-             $ source / path-to-ROS_node/install/setup.bash --extend
-
-Playback a saved rosbag, and run lidar SLAM 
-
-             $ roslaunch kdlidar_ros kdlidar_ros_ouster_evaluation.launch replay:="true" replay_rate:="0.5" bag_path:="/path/and/filename.bag" metadata:="/path/and/filename.json
-
-
-### 2.6/ Exporting the map to PLY:
+Create a video from a ROS bag containing lidar and IMU packets from a single Ouster sensor (OS0, OS1 or OS2). with https://webslam.ouster.dev/
     
-    
-Save the genirated map as a ply file when you have completed the sequence. 
-
-            $ rosservice call /path ros_node_pcl/save_ply /path:to:mymap.ply 
-
-Once the map is saved you should see a success message success: True
-
-    
-### Optional: 
-    
-If you want to save the trajectory as a file (position and orientation), then use the following command to save the trajectory to file once ros starts
-            
-            $ rostopic echo -p /kdlidar_ros_pcl/pose > /path/to/trajectory.csv
-
- 
- If you want to adjust the density of the map, you will need to modify the included ouster_evaluation.yaml file
-    
-            storeAllFrames: True (default is false)
-            storeDenseFrames: True (default is false)
- 
-<p align="center">  ### OS1-128 Map Generation in RViz :  </p> 
-    
-   
-  <p align="center">   
-  <img src="https://user-images.githubusercontent.com/97898968/158196193-bf24c67f-d13d-409f-9310-3b075e288b1d.png?raw=true" alt="Sublime's custom image""/>
-</p>
-
-
 
