@@ -1,1 +1,19 @@
+# WEB_SLAM 
+
+Autonomous machines and vehicles rely on Simultaneous Localization and Mapping (SLAM) software to build a map of their environment, and understand their position and orientation within that space at any given moment.
+     
+Create a video from a ROS bag containing lidar and IMU packets from a single Ouster sensor (OS0, OS1 or OS2) with https://webslam.ouster.dev/
+
+Bag filename:= mybag.bag (1,1GB) 
+sensor config:= sensor_config.json (71 kB) 
+
+## Results :   
+
+<p align="center">  ### OS1-128 Map Generation in RViz with Fast_Lio :  </p> 
+    
+   
+  <p align="center">   
+  <img src="https://user-images.githubusercontent.com/97898968/158382922-8326a099-d7f9-4ac7-9393-33980e34af6e.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
 
