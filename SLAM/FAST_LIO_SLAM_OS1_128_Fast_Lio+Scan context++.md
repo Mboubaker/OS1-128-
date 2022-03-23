@@ -94,8 +94,12 @@ Set the right path in  "catkin_fastlio_slam/src/FAST_LIO_SLAM/SC-PGO/launch/laun
   <img src="https://user-images.githubusercontent.com/97898968/158196193-bf24c67f-d13d-409f-9310-3b075e288b1d.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+ ## Reconstruction of a point cloud map : 
+   
  
-
+you can recreate your map by this code python which support keyframe scan saver (as in .pcd) and provide a script reconstructs a point cloud map by merging the saved scans using the optimized poses. 
+see the code here : https://github.com/gisbi-kim/FAST_LIO_SLAM/blob/bf975560741c425f71811c864af5d35aa880c797/SC-PGO/utils/python/makeMergedMap.py
+To install pypcd :  use this command: python3.x (use your python ver) -m pip install --user git+https://github.com/DanielPollithy/pypcd.git
   
 
 
