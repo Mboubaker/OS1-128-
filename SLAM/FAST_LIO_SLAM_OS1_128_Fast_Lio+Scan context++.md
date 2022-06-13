@@ -39,12 +39,12 @@ For more details : https://arxiv.org/pdf/2109.13494.pdf (Scan Context++: Structu
     cd .. 
     catkin_make
     source devel/setup.bash
-    roslaunch fast_lio mapping_ouster64_mulran.launch # setting for MulRan dataset 
+    roslaunch fast_lio mapping_ouster64.launch  
 
     # open the other terminal tab: run SC-PGO
     cd ~/catkin_fastlio_slam
     source devel/setup.bash
-    roslaunch aloam_velodyne fastlio_ouster64.launch # setting for MulRan dataset 
+    roslaunch aloam_velodyne fastlio_ouster64.launch  
     
     
 ## ● Run real-time Lidar SLAM on your system
