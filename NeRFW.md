@@ -1,3 +1,8 @@
+# NeRF in the Wild :Neural Radiance Fields for Unconstrained Photo Collections
+project site : https://nerf-w.github.io/
+
+The NeRF implementation expects initial camera parameters to be provided in a transforms.json file in a format compatible with the original NeRF codebase. with the script, scripts/colmap2nerf.py, you can use it to process a video file or sequence of images, using the open source COLMAP structure from motion software to extract the necessary camera data.
+
 ##  Preparing new NeRF datasets :
 ### For training from images : 
 - step 1  : launch colmap :  
