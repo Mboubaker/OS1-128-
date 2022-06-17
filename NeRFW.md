@@ -2,8 +2,10 @@
 
 The NeRF implementation expects initial camera parameters to be provided in a transforms.json file in a format compatible with the original NeRF codebase. with the script, scripts/colmap2nerf.py, you can use it to process a video file or sequence of images, using the open source COLMAP structure from motion software to extract the necessary camera data.
 
-##  Preparing new NeRF datasets :
+## Preparing new NeRF datasets :
+
 ### For training from images : 
+
 - step 1  : launch colmap :  
       
       $colmap automatic_reconstructor --workspace_path /work/datas/dossier_projet/ --image_path /work/datas/dossier_projet/images/
@@ -18,8 +20,7 @@ The NeRF implementation expects initial camera parameters to be provided in a tr
        
        folder of images  $ python /home/ad/caraffl/code/colmap/instant-ngp/scripts/colmap2nerf.py --colmap_matcher exhaustive  --aabb_scale 16 ( decreasing the value 16, 8, 4, 2, 1)
 
-### For training from video file : 
-
+### For training from video file 
 
 - If you are training from a video file, run the scripts/colmap2nerf.py script from the folder containing the video, with the following recommended parameters:
 
@@ -29,7 +30,7 @@ The NeRF implementation expects initial camera parameters to be provided in a tr
   
 - The script will run FFmpeg and/or COLMAP as needed, followed by a conversion step to the required transforms.json format, which will be written in the current directory.
   
-  ## Training
+## Training
   
        python train.py \
           >   --root_dir /home/datas/dataset_name --dataset_name phototourism \
@@ -53,7 +54,7 @@ The NeRF implementation expects initial camera parameters to be provided in a tr
 for example, if you want to use the second GPU
 https://github.com/kwea123/nerf_pl/blob/dev/eval.py : just change the .cuda() code to .to('cuda: 1') .
   
-## References :
+## References 
 project site : https://nerf-w.github.io/
 An implementation of neural graphics primitives : https://github.com/NVlabs/instant-ngp
 Unofficial implementation of NeRF-W : https://github.com/kwea123/nerf_pl/tree/nerfw
