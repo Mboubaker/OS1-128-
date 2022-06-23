@@ -41,9 +41,9 @@ The NeRF implementation expects initial camera parameters to be provided in a tr
           >   --exp_name kitti_scale2_nerfw \
           >   --num_gpus 4
           
---img_downscale : an integer, e.g. 2 means half the image sizes
---encode_a and --encode_t : options are both required to maximize NeRF-W performance.
---N_vocab : should be set to an integer larger than the number of images (dependent on different scenes).
+*--img_downscale : an integer, e.g. 2 means half the image sizes.
+*--encode_a and *--encode_t : options are both required to maximize NeRF-W performance.
+*--N_vocab : should be set to an integer larger than the number of images (dependent on different scenes).
 
 ## Monitoring 
 
