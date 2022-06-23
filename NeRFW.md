@@ -45,7 +45,7 @@ The NeRF implementation expects initial camera parameters to be provided in a tr
 --encode_a and --encode_t : options are both required to maximize NeRF-W performance.
 --N_vocab : should be set to an integer larger than the number of images (dependent on different scenes).
 
-## monitoring 
+## Monitoring 
 
 You can monitor the training process by tensorboard --logdir logs/ and go to localhost:6006 in your browser.
 
