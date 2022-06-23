@@ -38,7 +38,7 @@ Assuming success, you can now train your NeRF model as follows, starting in the 
         
 
 ## Results : 
-input : video of 25 seconds 
+input : video of 25 seconds of a Lidar ouster os1-128 
   
   
   
