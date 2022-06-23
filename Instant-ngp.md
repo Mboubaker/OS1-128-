@@ -7,7 +7,7 @@ using the open source COLMAP structure from motion software to extract the neces
 - It is important for the dataset to have good coverage, to not contain mislabelled camera data, and to not contain 
 blurry frames (motion blur and defocus blur are both problematic).
 
-## Preparing new NeRF datasets
+## Train your own Data : 
 
 Make sure that you have installed COLMAP and it is available in your PATH. 
 
