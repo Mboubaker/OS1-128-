@@ -6,17 +6,17 @@ The NeRF implementation expects initial camera parameters to be provided in a tr
 
 ### For training from images : 
 
-- step 1  : launch colmap :  
+- Step 1  : launch colmap :  
       
       $colmap automatic_reconstructor --workspace_path /work/datas/dossier_projet/ --image_path /work/datas/dossier_projet/images/
 
-- step2 : change the files .bin to .txt 
+- Step2 : change the files .bin to .txt 
                
        $colmap model_converter  --input_path  /work/scratch/caraffl/datas/dossier_projet/sparse/0/ --output_path  /work/scratch/caraffl/datas/dossier_projet/ --output_type TXT
 
-- step 3  : you have to create a colmap_text folder next to the images folder to put there the 3 .txt files
+- Step 3  : you have to create a colmap_text folder next to the images folder to put there the 3 .txt files
 
-- step 4  : For training from images, place them in a subfolder called images and then use suitable options such as the ones below:
+- Step 4  : For training from images, place them in a subfolder called images and then use suitable options such as the ones below:
        
        folder of images  $ python /home/ad/caraffl/code/colmap/instant-ngp/scripts/colmap2nerf.py --colmap_matcher exhaustive  --aabb_scale 16 ( decreasing the value 16, 8, 4, 2, 1)
 
@@ -59,10 +59,10 @@ Use eval.py to create the whole sequence of moving views. It will create folder 
         --ckpt_path /work/datas/nerf_pl-nerfw/ckpts/kitti_2_nerfw/epoch=11.ckpt
         --chunk 16384 --img_wh 640 480 --video_format gif
 
-for example, if you want to use the second GPU
+For example, if you want to use the second GPU
 https://github.com/kwea123/nerf_pl/blob/dev/eval.py : just change the .cuda() code to .to('cuda: 1') .
   
 ## References 
-project site : https://nerf-w.github.io/
+Project site : https://nerf-w.github.io/
 An implementation of neural graphics primitives : https://github.com/NVlabs/instant-ngp
 Unofficial implementation of NeRF-W : https://github.com/kwea123/nerf_pl/tree/nerfw
