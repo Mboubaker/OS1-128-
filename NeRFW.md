@@ -12,7 +12,7 @@ The NeRF implementation expects initial camera parameters to be provided in a tr
 
 - step2 : change the files .bin to .txt 
                
-       $/softs/rh7/singularity/3.5.3/bin/singularity exec /work/scratch/caraffl/instant_ngp.simg colmap model_converter  --input_path  /work/scratch/caraffl/datas/dossier_projet/sparse/0/ --output_path  /work/scratch/caraffl/datas/dossier_projet/ --output_type TXT
+       $colmap model_converter  --input_path  /work/scratch/caraffl/datas/dossier_projet/sparse/0/ --output_path  /work/scratch/caraffl/datas/dossier_projet/ --output_type TXT
 
 - step 3  : you have to create a colmap_text folder next to the images folder to put there the 3 .txt files
 
@@ -40,15 +40,23 @@ The NeRF implementation expects initial camera parameters to be provided in a tr
           >   --optimizer adam --lr 5e-4 --lr_scheduler cosine \
           >   --exp_name kitti_scale2_nerfw \
           >   --num_gpus 4
+          
+--img_downscale : an integer, e.g. 2 means half the image sizes
+--encode_a and --encode_t : options are both required to maximize NeRF-W performance.
+--N_vocab : should be set to an integer larger than the number of images (dependent on different scenes).
 
+## monitoring 
 
+You can monitor the training process by tensorboard --logdir logs/ and go to localhost:6006 in your browser.
 
 ## Testing
 
-     python eval.py   --root_dir /work/scratch/caraffl/datas/kitti/ 
+Use eval.py to create the whole sequence of moving views. It will create folder results/{dataset_name}/{scene_name} and run inference on all test data, finally create a gif out of them.
+
+     python eval.py   --root_dir /work/datas/kitti/ 
         --dataset_name phototourism --scene_name kitti --split test_train --img_downscale 2 --N_samples 256 --N_importance 256  
         --N_vocab 500 --encode_a --encode_t  --use_disp 
-        --ckpt_path /work/scratch/caraffl/datas/nerf_pl-nerfw/ckpts/kitti_2_nerfw/epoch=11.ckpt
+        --ckpt_path /work/datas/nerf_pl-nerfw/ckpts/kitti_2_nerfw/epoch=11.ckpt
         --chunk 16384 --img_wh 640 480 --video_format gif
 
 for example, if you want to use the second GPU
