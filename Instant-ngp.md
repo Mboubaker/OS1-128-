@@ -35,6 +35,15 @@ Make sure that you have installed COLMAP and it is available in your PATH.
 Assuming success, you can now train your NeRF model as follows, starting in the instant-ngp folder:
 
         instant-ngp$ ./build/testbed --mode nerf --scene [path to training data folder containing transforms.json]
+        
+        
+        <p align="center">   
+  <img src="https://user-images.githubusercontent.com/97898968/175321021-176ed6e9-0fc9-40a2-bb64-5f4065f37f0f.png?raw=true" alt="Sublime's custom image"/>
+</p>
+        
+        
+        
+        
 ## References : 
 
 Project site : https://github.com/NVlabs/instant-ngp
