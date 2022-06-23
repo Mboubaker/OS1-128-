@@ -64,5 +64,7 @@ https://github.com/kwea123/nerf_pl/blob/dev/eval.py : just change the .cuda() co
   
 ## References 
 Project site : https://nerf-w.github.io/
+
 An implementation of neural graphics primitives : https://github.com/NVlabs/instant-ngp
+
 Unofficial implementation of NeRF-W : https://github.com/kwea123/nerf_pl/tree/nerfw
