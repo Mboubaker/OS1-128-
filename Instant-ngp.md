@@ -10,7 +10,6 @@ blurry frames (motion blur and defocus blur are both problematic).
 ## Preparing new NeRF datasets
 
 Make sure that you have installed COLMAP and it is available in your PATH. 
-If you are using a video file as input, also 
 
 ### If you are training from a video file : 
 
@@ -36,3 +35,6 @@ The NeRF model trains best with between 50-150 images which exhibit minimal scen
 Assuming success, you can now train your NeRF model as follows, starting in the instant-ngp folder:
 
         instant-ngp$ ./build/testbed --mode nerf --scene [path to training data folder containing transforms.json]
+## References : 
+
+Project site : https://github.com/NVlabs/instant-ngp
