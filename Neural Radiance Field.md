@@ -24,7 +24,7 @@ The output to the MLP consists of 2 components as well:
 
 (σ\sigma): denotes the density or transparency of the point.
 
- 
+ ..
 
 
 
