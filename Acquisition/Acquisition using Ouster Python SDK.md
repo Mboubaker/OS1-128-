@@ -1,10 +1,10 @@
-##Ouster Data pca
+# Ouster Data pca
 Before we begin, let’s take a quick look at the unique features of Ouster lidar sensor data that makes this project possible. 
 Understanding Ouster’s rich data layers and its perfect 1:1 spatial correspondence of points is the key to understanding how 
 we are able to combine 2D algorithms and 3D spatial data.
 
 
-###Ouster Data Layer : 
+## Ouster Data Layer : 
 
 OS1-128 lidar sensor outputs four data layers for each pixel: Range, Signal, Near-IR, and Reflectivity. 
 
@@ -19,8 +19,26 @@ that was not produced by the sensor’s laser pulse
 ⇒ Reflectivity: The reflectivity of the surface (or object) that was detected by the sensor.
 
 
+## Ouster Python SDK
+The Ouster Sensor SDK provides developers interfaces for interacting with sensor hardware.
+The SDK includes APIs for : 
 
-###Acquisition of data layers using Ouster Python SDK and OS1-128 
+-  Querying and setting sensor configuration.
+
+-  Recording and reading data in pcap format.
+
+-  Reading and buffering sensor UDP data streams reliably.
+
+-  Conversion of raw data to range/signal/near_ir/reflectivity images (destaggering).
+
+-  Efficient projection of range measurements to Cartesian (x, y, z) corrdinates.
+
+-  Visualization of multi-beam flash lidar data.
+
+### Ouster SDK Installation :
+please follow this link https://static.ouster.dev/sdk-docs/installation.html
+
+## Acquisition of data layers using Ouster Python SDK and OS1-128 
 
 Our lidar sensor provides two files: a PCAP file which is raw UDP packets captured by the sensor, and a JSON file which contains 
 the sensor’s metadata that’s required to interpret packets. Using the SDK, we first loaded the sensor metadata using the client module.
@@ -61,11 +79,14 @@ as grayscale images for data labeling. The calls look like the following:
                filename = 'extract'+str(counter)+'.jpg'
                cv2.imwrite(img_path+filename, ref_img)
 
-###Test and results 
+## Test and results 
 
-
+### layer of intensity : 
 
 <p align="center">   
   <img src="https://user-images.githubusercontent.com/97898968/191918297-c0996643-6e5e-40b7-a92c-76d3b6ad1b75.png?raw=true" alt="Sublime's custom image"/>
 </p>
-           
+### layer of reflectivity :  
+<p align="center">   
+  <img src="https://user-images.githubusercontent.com/97898968/191918566-8a9bb9e4-b2c1-405d-9a27-bd38623d996f.png?raw=true" alt="Sublime's custom image"/>
+</p>
