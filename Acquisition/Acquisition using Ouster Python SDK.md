@@ -40,7 +40,7 @@ please follow this link https://static.ouster.dev/sdk-docs/installation.html
 
 ## Acquisition of data layers using Ouster Python SDK and OS1-128 
 
-Our lidar sensor provides two files: a PCAP file which is raw UDP packets captured by the sensor, and a JSON file which contains 
+the OS1-128 lidar sensor provides two files: a PCAP file which is raw UDP packets captured by the sensor, and a JSON file which contains 
 the sensor’s metadata that’s required to interpret packets. Using the SDK, we first loaded the sensor metadata using the client module.
        from ouster import client
        metadata_path = '<DATA_JSON_PATH>'
@@ -123,8 +123,8 @@ Figure : the intensity layer as grayscale image
   <p align="center">   
   <img src="https://user-images.githubusercontent.com/97898968/191921776-39afb2f0-cb11-460e-92eb-fb7451e50978.png?raw=true" alt="Sublime's custom image"/>
 </p>                               
- <p align="center">   
-                    
+ 
+ <p align="center">                      
 Figure : the reflectivity layer as csv file 
  </p>                               
       
