@@ -17,7 +17,7 @@ In the first example, an OS-1-128 is mounted to the car of acquisition with a la
 </p>
 
  <p align="center"> 
- Figure: Lidar OS1-128 sur la voiture d’acquisition
+ Figure: Lidar OS1-128 on the acquisition car
  </p>
 
 
@@ -38,6 +38,6 @@ The second step, we run FAST_LIO_SLAM :
 </p>
 
 <p align="center"> 
- Figure A: the trajectory of the acquisition car on google earth
- Figure B : slam result displayed on Rviz
+ Figure A: The trajectory of the acquisition car on google earth, 
+ Figure B : Slam result displayed on Rviz
  </p>
