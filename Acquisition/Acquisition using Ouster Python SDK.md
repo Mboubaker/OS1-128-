@@ -1,3 +1,4 @@
+##Ouster Data pca
 Before we begin, let’s take a quick look at the unique features of Ouster lidar sensor data that makes this project possible. 
 Understanding Ouster’s rich data layers and its perfect 1:1 spatial correspondence of points is the key to understanding how 
 we are able to combine 2D algorithms and 3D spatial data.
@@ -65,6 +66,6 @@ as grayscale images for data labeling. The calls look like the following:
 
 
 <p align="center">   
-  <img src="https://user-images.githubusercontent.com/97898968/158196193-bf24c67f-d13d-409f-9310-3b075e288b1d.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/97898968/191918297-c0996643-6e5e-40b7-a92c-76d3b6ad1b75.png?raw=true" alt="Sublime's custom image"/>
 </p>
            
