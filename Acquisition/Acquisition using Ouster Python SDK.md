@@ -104,8 +104,10 @@ Figure : the intensity layer as grayscale image
  <p align="center">   
   <img src="https://user-images.githubusercontent.com/97898968/191921791-4ad8f81f-6265-417e-af3d-fd3b3d662729.png?raw=true" alt="Sublime's custom image"/>
 </p>                                
-                                 
-                                 Figure : the intensity layer as csv file
+ <p align="center">                                 
+  Figure : the intensity layer as csv file
+ </p>                               
+
 ### layer of reflectivity :  
 
 <p align="center">   
@@ -113,7 +115,7 @@ Figure : the intensity layer as grayscale image
 </p>
 <p align="center">   
  Figure : the reflectivity layer as grayscale image
-  </p>
+ </p>
                                
                                  
                                  
@@ -121,5 +123,8 @@ Figure : the intensity layer as grayscale image
   <p align="center">   
   <img src="https://user-images.githubusercontent.com/97898968/191921776-39afb2f0-cb11-460e-92eb-fb7451e50978.png?raw=true" alt="Sublime's custom image"/>
 </p>                               
-                     
-                                 Figure : the reflectivity layer as csv file 
+ <p align="center">   
+                    
+Figure : the reflectivity layer as csv file 
+ </p>                               
+      
