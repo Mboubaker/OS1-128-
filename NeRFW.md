@@ -62,6 +62,16 @@ Use eval.py to create the whole sequence of moving views. It will create folder 
 For example, if you want to use the second GPU
 https://github.com/kwea123/nerf_pl/blob/dev/eval.py : just change the .cuda() code to .to('cuda: 1') .
   
+
+
+
+
+
+
+
+
+
+
 ## References 
 Project site : https://nerf-w.github.io/
 
