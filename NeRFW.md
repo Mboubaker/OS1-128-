@@ -63,9 +63,26 @@ For example, if you want to use the second GPU
 https://github.com/kwea123/nerf_pl/blob/dev/eval.py : just change the .cuda() code to .to('cuda: 1') .
   
 
+## Results : 
+
+### kitti dataset : 
+
+<p align="center">   
+  <img src="https://user-images.githubusercontent.com/97898968/191943519-473797e5-3736-4113-8e69-0a8dcffb2329.gif?raw=true" alt="Sublime's custom image"/>
+</p>
+
+ <p align="center"> 
+ Figure: result 1 of Nerf in the wild 
+ </p>
 
 
+<p align="center">   
+  <img src="https://user-images.githubusercontent.com/97898968/191944010-66cff858-cf44-46e2-80a6-89888d32b076.gif?raw=true" alt="Sublime's custom image"/>
+</p>
 
+ <p align="center"> 
+ Figure: result 2 of Nerf in the wild 
+ </p>
 
 
 
