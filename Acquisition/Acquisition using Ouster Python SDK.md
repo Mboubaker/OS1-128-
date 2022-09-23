@@ -51,7 +51,9 @@ With the metadata, we can now read the PCAP file by instantiating pcap.Pcap usin
       from ouster import pcap
       pcap_path = '<DATA_PCAP_PATH>' 
       pcap_file = pcap.Pcap(pcap_path, metadata)
-      
+
+### Saving data layer as grayscale image :       
+
 Now, let’s parse the PCAP into individual scans using the Scans module. A scan is a restructured 360º view of data. 
 Since we’ll be using the reflectivity and range layers,let’s pull them out from each scan. 
 We collected multiple PCAP files with an OS0-128 (you can see how to do it here), and then used the Ouster Python SDK to pull
@@ -78,7 +80,15 @@ as grayscale images for data labeling. The calls look like the following:
 
                filename = 'extract'+str(counter)+'.jpg'
                cv2.imwrite(img_path+filename, ref_img)
+### Saving data layer as csv file : 
 
+By analyzing the PCAP, we extracted all scans using "the Scans module" in Ouster python SDK .
+Since we used the Intensity and Range layers, we ended up saving the intensity and range of each pixel in the scan to a csv file.
+The calls look like the following:
+
+      import numpy as np
+      np.savetxt('./Intensity_csv/Intensity'+ str(counter) + '.csv', ref_field, delimiter=' ')
+      
 ## Test and results 
 
 ### layer of intensity : 
@@ -86,7 +96,27 @@ as grayscale images for data labeling. The calls look like the following:
 <p align="center">   
   <img src="https://user-images.githubusercontent.com/97898968/191918297-c0996643-6e5e-40b7-a92c-76d3b6ad1b75.png?raw=true" alt="Sublime's custom image"/>
 </p>
+                                 
+                                 Figure : the intensity layer as grayscale image
+                                 
+ <p align="center">   
+  <img src="https://user-images.githubusercontent.com/97898968/191921791-4ad8f81f-6265-417e-af3d-fd3b3d662729.png?raw=true" alt="Sublime's custom image"/>
+</p>                                
+                                 
+                                 Figure : the intensity layer as csv file
 ### layer of reflectivity :  
+
 <p align="center">   
   <img src="https://user-images.githubusercontent.com/97898968/191918566-8a9bb9e4-b2c1-405d-9a27-bd38623d996f.png?raw=true" alt="Sublime's custom image"/>
 </p>
+
+                                 Figure : the reflectivity layer as grayscale image
+                                 
+                                 
+                                 
+                                 
+  <p align="center">   
+  <img src="https://user-images.githubusercontent.com/97898968/191921776-39afb2f0-cb11-460e-92eb-fb7451e50978.png?raw=true" alt="Sublime's custom image"/>
+</p>                               
+                     
+                                 Figure : the reflectivity layer as csv file 
