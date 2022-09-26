@@ -1,4 +1,4 @@
-#Lidar Ouster OS1-128 
+# Lidar Ouster OS1-128 
 ## Plan :
 ### 1- DATA Acquisition ROS and Ouster Python SDK 
 ### 2- Open3D & PCL 
