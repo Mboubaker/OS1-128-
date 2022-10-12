@@ -59,12 +59,12 @@ Since we’ll be using the reflectivity and range layers,let’s pull them out f
 We collected multiple PCAP files with an OS0-128 (you can see how to do it here), and then used the Ouster Python SDK to pull
 the reflectivity, intensity, range and near_IR layers of each scan and utilized OpenCV’s cv2.imwrite function to save the layers
 as grayscale images for data labeling. The calls look like the following:
+       
        import cv2
        import numpy as np
        from contextlib import closing
        from ouster import client
        from ouster import pcap
-
        with open(metadata_path, 'r') as f:
            metadata = client.SensorInfo(f.read())
 
@@ -80,6 +80,7 @@ as grayscale images for data labeling. The calls look like the following:
 
                filename = 'extract'+str(counter)+'.jpg'
                cv2.imwrite(img_path+filename, ref_img)
+               
 ### Saving data layer as csv file : 
 
 By analyzing the PCAP, we extracted all scans using "the Scans module" in Ouster python SDK .
